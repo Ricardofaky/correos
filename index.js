@@ -13,7 +13,7 @@ app.post('/enviar-correo', async (req, res) => {
 
   const msg = {
     to: destinatarios,
-    from: 'tucorreo@verificado.com', // debe estar verificado en SendGrid
+    from: 'ricardo541919@hotmail.com', // debe estar verificado en SendGrid
     subject: asunto,
     text: mensaje
   };
