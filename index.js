@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-sgMail.setApiKey(process.env.SENDGRID_KEY);
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 app.post('/enviar-correo', async (req, res) => {
   const { asunto, mensaje, destinatarios } = req.body;
