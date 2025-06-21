@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-console.log("🔍 Valor de SENDGRID_KEY:", process.env.SENDGRID_KEY);
+console.log("🧪 Variables disponibles:", process.env);
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
